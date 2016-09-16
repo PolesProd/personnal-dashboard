@@ -32,16 +32,16 @@ include('lib/rssclass.php');
 
     <!--    Début du Contenu-->
         <body
-            <div id="ContentZone" class="drop">
+            <div id="ContentZone">
 
 
-                <div class="WidgetPetit drag">
+                <div class="WidgetPetit">
                     <h2>Date et Heure</h2><br>
                     <div id="date_heure">    
                     </div>
                 </div>
 
-                <div class="WidgetMoyen drag">
+                <div class="WidgetMoyen">
                     <?php
                     $feedlistMonde = new rss('http://www.lemonde.fr/m-actu/rss_full.xml');
                     echo $feedlistMonde->display(8, "Le Monde");
@@ -50,13 +50,13 @@ include('lib/rssclass.php');
 
               
 
-                <div class="WidgetMoyen drag">
+                <div class="WidgetMoyen">
                     <?php
                     $feedlistInsta = new rss('https://queryfeed.net/instagram?q=%23lepolesidf');
                     echo $feedlistBFM->display(5, "Insta LePoleS_IDF");
                     ?>
                 </div> 
-                <div id="WidgetMeteo" class="drag">
+                <div id="WidgetMeteo">
                     <div id="widget_2283b64454088d82e0ea206c70ca219e">
                         <span id="l_2283b64454088d82e0ea206c70ca219e"><a href="http://www.my-meteo.fr/previsions+meteo+france/paris.html">www.my-meteo.fr</a></span>
                         <script type="text/javascript">

@@ -103,7 +103,7 @@ include('lib/rssclass.php');
                         window.onload = function main() {
 
                             // Get the context of the canvas
-                            var ctx = document.getElementById("myChart").getContext("2d");
+                            var ctx = document.getElementById("myChart");
 
                             // Create the Chart object
                             var line_example_chart = new Chart(ctx).Line(data);

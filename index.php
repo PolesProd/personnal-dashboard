@@ -76,7 +76,7 @@ include('lib/rssclass.php');
                     <script type="text/javascript">
                     var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [{

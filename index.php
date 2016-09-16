@@ -112,6 +112,8 @@ include('lib/rssclass.php');
                                 }
                             }
                         });
+                        myChart.datasets[0].line[25] = 75;
+                        myChart.update()
                 </script>
                 </div>
             </div>

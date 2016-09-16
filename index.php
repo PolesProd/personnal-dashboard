@@ -12,8 +12,10 @@ include('lib/rssclass.php');
         <link rel="icon" type="image/png" href="http://lepoles.org/wp-content/themes/activism/favicon.ico" />
 
         <!--        Appels des Librairies et Scripts-->
+<!--
         <script src="https://unpkg.com/react@15.3.1/dist/react.js"></script>
         <script src="https://unpkg.com/react-dom@15.3.1/dist/react-dom.js"></script>  
+-->
         <script src="lib/Chart.min.js"></script>
         <script src="lib/jquery-3.1.0.min.js"></script>
         <script src="js/customScript.js"></script>

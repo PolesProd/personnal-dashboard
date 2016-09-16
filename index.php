@@ -53,7 +53,7 @@ include('lib/rssclass.php');
                 <div class="WidgetMoyen">
                     <?php
                     $feedlistInsta = new rss('https://queryfeed.net/instagram?q=%23lepolesidf');
-                    echo $feedlistBFM->display(5, "Insta LePoleS_IDF");
+                    echo $feedlistInsta->display(5, "Insta LePoleS_IDF");
                     ?>
                 </div> 
                 <div id="WidgetMeteo">

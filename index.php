@@ -74,7 +74,7 @@ include('lib/rssclass.php');
                 <div class="WidgetGrand">
                     <canvas id="myChart" width="800" height="650"></canvas>
                     <script type="text/javascript">
-                        var dataCharts = [15, 19, 3, 5, 2, 3]
+                        var dataCharts = [0]
                         var ctx = document.getElementById("myChart");
                         var myChart = new Chart(ctx, {
                             type: 'line',

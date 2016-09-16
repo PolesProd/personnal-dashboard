@@ -125,7 +125,6 @@ include('lib/rssclass.php');
                         }
                         // Run rand_value() every 2 seconds
                         window.setInterval(rand_value, 2000);
-}
                 </script>
                 </div>
             </div>

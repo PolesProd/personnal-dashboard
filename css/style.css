@@ -31,6 +31,9 @@
     width: 490px;
     border: solid 1px #ccc;
 }
+#myChart{
+    background-color: aqua;
+}
 /*
 .drag:hover{
     cursor: all-scroll;

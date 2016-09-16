@@ -52,7 +52,7 @@ include('lib/rssclass.php');
 
                 <div class="WidgetMoyen drag">
                     <?php
-                    $feedlistBFM = new rss('https://queryfeed.net/instagram?q=%23lepolesidf');
+                    $feedlistInsta = new rss('https://queryfeed.net/instagram?q=%23lepolesidf');
                     echo $feedlistBFM->display(5, "Insta LePoleS_IDF");
                     ?>
                 </div> 

@@ -71,62 +71,47 @@ include('lib/rssclass.php');
                     </div>
                 </div>
                 
-                <div class="WidgetGrand">
-                    <canvas id="myChart" width="300" height="300"></canvas>
+             
+                    <canvas id="myChart" width="50px" height="50px"></canvas>
                     <script type="text/javascript">
                         var dataCharts = [0]
                         var ctx = document.getElementById("myChart");
-                        var myChart = new Chart(ctx, {
+                        var startingData =  {
                             type: 'line',
                             data: {
-                                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-                                datasets: [{
-                                    label: '# of Votes',
-                                    data: dataCharts,
-                                    backgroundColor: [
-                                        'rgba(255, 99, 132, 0.2)',
-                                        'rgba(54, 162, 235, 0.2)',
-                                        'rgba(255, 206, 86, 0.2)',
-                                        'rgba(75, 192, 192, 0.2)',
-                                        'rgba(153, 102, 255, 0.2)',
-                                        'rgba(255, 159, 64, 0.2)'
-                                    ],
-                                    borderColor: [
-                                        'rgba(255,99,132,1)',
-                                        'rgba(54, 162, 235, 1)',
-                                        'rgba(255, 206, 86, 1)',
-                                        'rgba(75, 192, 192, 1)',
-                                        'rgba(153, 102, 255, 1)',
-                                        'rgba(255, 159, 64, 1)'
-                                    ],
-                                    borderWidth: 1
-                                }]
+                                labels: [1, 2, 3, 4, 5, 6, 7],
+                                  datasets: [
+                                      {
+                                          fillColor: "rgba(220,220,220,0.2)",
+                                          strokeColor: "rgba(220,220,220,1)",
+                                          pointColor: "rgba(220,220,220,1)",
+                                          pointStrokeColor: "#fff",
+                                          data: [65, 59, 80, 81, 56, 55, 40]
+                                      }
+                                  ]
                             },
-                            options: {
-                                scales: {
-                                    yAxes: [{
-                                        ticks: {
-                                            beginAtZero:true
-                                        }
-                                    }]
-                                }
-                            }
-                        });
-                        var label_idx = 1;
-                        function rand_value() {
-                            // Generate a random integer
-                            var rand_val = Math.floor(Math.random() * 100);
+                           
+                        };
+                        var myChart = new Chart(ctx,startingData);
 
-                            // Remove the point at the far left of the chart
-                            myChart.data();
+                       
+                        
+                        
 
-                            // Add the random value at the far right of the chart
-                            myChart.addData([rand_val], label_idx++);
-                        }
-                        // Run rand_value() every 2 seconds
-                        window.setInterval(rand_value, 2000);
+//setInterval(function(){
+//  // Get a random index point
+//  var indexToUpdate = Math.round(Math.random() * startingData.data.labels[0]);
+//  
+//  // Update one of the points in the second dataset
+//  startingData.data.labels[0] = Math.round(Math.random(1,100) * 100);
+//    
+//     console.log(startingData.data.labels[0])
+//  
+//  myChart.update();
+//}, 1000);
+
                 </script>
-                </div>
+               
             </div>
         <footer>
 

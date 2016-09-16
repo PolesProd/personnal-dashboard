@@ -112,6 +112,20 @@ include('lib/rssclass.php');
                                 }
                             }
                         });
+                        var label_idx = 1;
+                        function rand_value() {
+                            // Generate a random integer
+                            var rand_val = Math.floor(Math.random() * 100);
+
+                            // Remove the point at the far left of the chart
+                            myChart.removeData();
+
+                            // Add the random value at the far right of the chart
+                            myChart.addData([rand_val], label_idx++);
+                        }
+                        // Run rand_value() every 2 seconds
+                        window.setInterval(rand_value, 2000);
+}
                 </script>
                 </div>
             </div>

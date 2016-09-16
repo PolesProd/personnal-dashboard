@@ -16,12 +16,12 @@ include('lib/rssclass.php');
         <script src="https://unpkg.com/react@15.3.1/dist/react.js"></script>
         <script src="https://unpkg.com/react-dom@15.3.1/dist/react-dom.js"></script>  
 -->
-        <script src="lib/Chart.min.js"></script>
         <script src="lib/jquery-3.1.0.min.js"></script>
         <script src="js/customScript.js"></script>
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
         <script src="lib/slideShow/jquery.slides.js"></script>
         <script src="lib/slideShow/jquery.slides.min.js"></script>
+        <script src="lib/Chart.min.js"></script>
 
 
         <!--        Appel des Styles-->
@@ -118,7 +118,7 @@ include('lib/rssclass.php');
                             var rand_val = Math.floor(Math.random() * 100);
 
                             // Remove the point at the far left of the chart
-                            myChart.removeData();
+                            myChart.data();
 
                             // Add the random value at the far right of the chart
                             myChart.addData([rand_val], label_idx++);

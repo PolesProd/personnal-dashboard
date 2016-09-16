@@ -74,6 +74,7 @@ include('lib/rssclass.php');
                 <div class="WidgetGrand">
                     <canvas id="myChart" width="800" height="650"></canvas>
                     <script type="text/javascript">
+                        var dataCharts = [15, 19, 3, 5, 2, 3]
                         var ctx = document.getElementById("myChart");
                         var myChart = new Chart(ctx, {
                             type: 'line',
@@ -81,7 +82,7 @@ include('lib/rssclass.php');
                                 labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
                                 datasets: [{
                                     label: '# of Votes',
-                                    data: [15, 19, 3, 5, 2, 3],
+                                    data: dataCharts,
                                     backgroundColor: [
                                         'rgba(255, 99, 132, 0.2)',
                                         'rgba(54, 162, 235, 0.2)',
@@ -114,11 +115,9 @@ include('lib/rssclass.php');
                 </script>
                 </div>
             </div>
-            <footer>
+        <footer>
 
-    </footer>
+        </footer>
         </body>
-         <!--    Fin du Contenu-->
-
-    
+         <!--    Fin du Contenu--> 
 </html>

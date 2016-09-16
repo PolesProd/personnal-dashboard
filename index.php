@@ -72,7 +72,7 @@ include('lib/rssclass.php');
                 </div>
                 
                 <div class="WidgetGrand">
-                    <canvas id="myChart" width="800" height="650"></canvas>
+                    <canvas id="myChart" width="300" height="300"></canvas>
                     <script type="text/javascript">
                         var dataCharts = [0]
                         var ctx = document.getElementById("myChart");

@@ -70,6 +70,10 @@ include('lib/rssclass.php');
                         </script>
                     </div>
                 </div>
+                
+                <div class="WidgetGrand">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
             </div>
         </body>
          <!--    Fin du Contenu-->

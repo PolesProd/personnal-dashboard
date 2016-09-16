@@ -114,10 +114,11 @@ include('lib/rssclass.php');
                 </script>
                 </div>
             </div>
+            <footer>
+
+    </footer>
         </body>
          <!--    Fin du Contenu-->
 
-    <footer>
-
-    </footer>
+    
 </html>

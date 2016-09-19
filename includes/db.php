@@ -19,9 +19,4 @@ code_postal INTEGER(30) NOT NULL,
 ville VARCHAR(128) NOT NULL,
 email VARCHAR(50),
 )";
-if($db->query($sql) === true){
-    echo 'Table créer';
-}
-else {
-    echo 'Fail !!!';
-}
+$db->query($sql);

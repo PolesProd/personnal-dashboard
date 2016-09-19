@@ -48,7 +48,7 @@ include('lib/rssclass.php');
 
                 <div class="WidgetMoyen">
                     <?php
-                    $feedlistMonde = new rss('');
+                    $feedlistMonde = new rss('http://www.lemonde.fr/m-actu/rss_full.xml');
                     echo $feedlistMonde->display(8, "Le Monde");
                     ?>
                 </div>

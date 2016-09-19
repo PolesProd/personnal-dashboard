@@ -75,7 +75,7 @@ include('lib/rssclass.php');
                 
                 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
                     <script type="text/javascript">
-                        $('#container').highcharts({
+                        var data = {
                             title: {
                                 text: 'Monthly Average Temperature',
                                 x: -20 //center
@@ -120,7 +120,9 @@ include('lib/rssclass.php');
                                 name: 'London',
                                 data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
                             }]
-                        });
+                        }
+                        $('#container').highcharts(data);
+                        
                     
     </script>
                

@@ -113,7 +113,11 @@ include('lib/rssclass.php');
                             }]
                         }
                         $('#container').highcharts(data);
-                        console.log(data.series[0].data.length)
+                        var count = data.series[0].data.length
+                        for (i = 0; i < count; i++) { 
+                            data.series[i].data
+                            console.log(data.series[i].data)
+                        }
                         
                     
     </script>

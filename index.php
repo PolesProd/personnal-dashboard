@@ -57,5 +57,4 @@ include('lib/rssclass.php');
 		</footer>
 	</body>
          <!--    Fin du Contenu-->
-
 </html>

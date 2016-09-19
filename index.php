@@ -74,6 +74,7 @@ include('lib/rssclass.php');
                 
                <canvas id="line_example" width="400" height="400"></canvas>
                     <script type="text/javascript">
+                        $(function{
                        var N = 10;
                         // Array filled with N values at '0'
                         var zero_array = [];
@@ -125,6 +126,7 @@ include('lib/rssclass.php');
                             // Run rand_value() every 2 seconds
                             window.setInterval(rand_value, 2000);
                         }
+                    });
     </script>
                
             </div>

@@ -159,8 +159,8 @@
             <div><b>19</b></div>
             <div><b>20</b></div>
           </div>
-          <button onclick='mySwipe.prev()'>prev</button> 
-          <button onclick='mySwipe.next()'>next</button>
+          <button onclick='mySwipe.prev()'>Prev</button> 
+          <button onclick='mySwipe.next()'>Next</button>
     </div>
 </div>
       

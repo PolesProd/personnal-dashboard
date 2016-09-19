@@ -40,7 +40,7 @@
       </div>
       <div class="WidgetMoyen">
          <?php
-            $feedlistMonde = new rss('http://www.zdnet.fr/feeds/rss/actualites/internet/');
+            $feedlistMonde = new rss('http://www.zdnet.fr/feeds/rss/actualites/interne/');
             echo $feedlistMonde->display(8, "<center>ZDNet</center>");
             ?>
       </div>

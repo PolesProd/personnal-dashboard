@@ -73,7 +73,7 @@ include('lib/rssclass.php');
                     </div>
                 </div>
                 
-                <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+               <canvas id="line_example" width="400" height="400"></canvas>
                     <script type="text/javascript">
                        var N = 10;
                         // Array filled with N values at '0'

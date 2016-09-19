@@ -31,7 +31,7 @@ include('lib/rssclass.php');
 
 		<section id="leftSide" class="spaceGrid">
 			<section>
-				
+
 			</section>
 			<section>
 				<div>
@@ -43,14 +43,14 @@ include('lib/rssclass.php');
 			</section>
 		</section><!--
 		--><section id="center" class="spaceGrid">
-			
+
 		</section><!--
 		--><section id="right" class="spaceGrid">
 			<div>
-				
+
 			</div>
 			<div>
-				
+
 			</div>
 		</section>
 		<footer>

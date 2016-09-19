@@ -10,22 +10,15 @@
       <meta name="keywords" content="dashboard, Custom">
       <meta name="author" content="LePoleS">
       <link rel="icon" type="image/png" href="http://lepoles.org/wp-content/themes/activism/favicon.ico" />
+      
       <!--        Appels des Librairies et Scripts-->
-      <!--
-         <script src="https://unpkg.com/react@15.3.1/dist/react.js"></script>
-         <script src="https://unpkg.com/react-dom@15.3.1/dist/react-dom.js"></script>  
-         -->
       <script src="lib/jquery-3.1.0.min.js"></script>
       <script src="js/customScript.js"></script>
       <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-<!--
-      <script src="lib/slideShow/jquery.slides.js"></script>
-      <script src="lib/slideShow/jquery.slides.min.js"></script>
--->
       <script src="lib/swipe.js"></script>
-      <!--        <script src="lib/Chart.min.js"></script>-->
       <script src="https://code.highcharts.com/highcharts.js"></script>
       <script src="https://code.highcharts.com/modules/exporting.js"></script>
+      
       <!--        Appel des Styles-->
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <title>Dashboard Custom LePoleS</title>
@@ -42,7 +35,7 @@
       <div class="WidgetMoyen">
          <?php
             $feedlistMonde = new rss('http://www.lemonde.fr/m-actu/rss_full.xml');
-            echo $feedlistMonde->display(8, "Le Monde");
+            echo $feedlistMonde->display(8, "<center>Le Monde</center>");
             ?>
       </div>
       <div id="WidgetMeteo">

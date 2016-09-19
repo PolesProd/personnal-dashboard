@@ -153,6 +153,10 @@
                 <div><b>19</b></div>
                 <div><b>20</b></div>
               </div>
+            <div style='text-align:center;padding-top:20px;'>
+                <button onclick='mySwipe.prev()'>Prev</button> 
+                <button onclick='mySwipe.next()'>Next</button>
+                </div>
         </div>
         <script>
 
@@ -160,7 +164,7 @@
 var elem = document.getElementById('mySwipe');
 window.mySwipe = Swipe(elem, {
    startSlide: 4,
-  auto: 3000,
+   auto: 10000,
    continuous: true,
    disableScroll: true,
    stopPropagation: true,

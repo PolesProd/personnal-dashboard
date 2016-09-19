@@ -115,8 +115,8 @@ include('lib/rssclass.php');
                         $('#container').highcharts(data);
                         var count = data.series[0].data.length
                         for (i = 0; i < count; i++) { 
-                            data.series[i].data
-                            console.log(data.series[i].data)
+                            data.series[0].data[i]
+                            console.log(data.series[0].data[i])
                         }
                         
                     

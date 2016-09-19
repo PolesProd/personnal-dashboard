@@ -22,8 +22,7 @@ include('lib/rssclass.php');
         <script src="lib/slideShow/jquery.slides.js"></script>
         <script src="lib/slideShow/jquery.slides.min.js"></script>
         <script src="lib/Chart.min.js"></script>
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        
 
 
         <!--        Appel des Styles-->

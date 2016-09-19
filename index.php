@@ -14,7 +14,7 @@ include('lib/rssclass.php');
         <!--        Appels des Librairies et Scripts-->
         <script src="lib/Chart.min.js"></script>
         <script src="lib/jquery-3.1.0.min.js"></script>
-       <!-- <script src="js/customScript.js"></script>-->
+        <script src="js/customScript.js"></script>
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
         <script src="lib/slideShow/jquery.slides.js"></script>
         <script src="lib/slideShow/jquery.slides.min.js"></script>
@@ -49,8 +49,9 @@ include('lib/rssclass.php');
 			<div>
 
 			</div>
-			<div>
-
+			<div class="WidgetPetit drag">
+				<h2>heure et date</h2>
+				<div id="date_heure"></div>
 			</div>
 		</section>
 		<footer>

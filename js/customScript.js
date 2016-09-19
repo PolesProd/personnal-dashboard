@@ -1,47 +1,22 @@
-// Drag And Drop Function
-//$(function(){
-//    $('.drop').droppable({
-//        tolerance: 'fit',
-//        drop: function(event,ui){
-//            ui.draggable.offset(ui.position);
-//        }
-//    });
-//
-//    $('.drag').draggable({
-//        revert: 'invalid',
-//        helper: 'clone',
-//        stop: function(){
-//            $(this).draggable('option','revert','invalid');
-//        }
-//    });
-//
-//    $('.drag').droppable({
-//        greedy: true,
-//        tolerance: 'touch',
-//        drop: function(event,ui){
-//            ui.draggable.draggable('option','revert',true);
-//        }
-//    });
-//});
-
 
 //HORLOGE
 function compZero(nombre) {
-return nombre < 10 ? '0' + nombre : nombre;
+	return nombre < 10 ? '0' + nombre : nombre;
 }
 
 function date_heure() {
-const infos = new Date();
+	const infos = new Date();
+	
+	//Heure
+	document.getElementById('date_heure').innerHTML ='<p><span>'+  compZero(infos.getHours()) + ':' + compZero(infos.getMinutes()) + '</span>' + compZero(infos.getSeconds())+'</p>';
 
-//Heure
-document.getElementById('date_heure').innerHTML =  compZero(infos.getHours()) + ' h ' + compZero(infos.getMinutes()) + ' min ' + compZero(infos.getSeconds()) + " sec";
-
-//Date
-const mois = new Array('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre');
-const jours = new Array('dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi');
-document.getElementById('date_heure').innerHTML += '<br>' + jours[infos.getDay()] + ' ' + infos.getDate() + ' ' + mois[infos.getMonth()] + ' ' + infos.getFullYear() + '.';
+	//Date
+	const mois = new Array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12');
+	/*new Array('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre');*/
+	const jours = new Array('dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi');
+	document.getElementById('date_heure').innerHTML += '<p>'+infos.getDate() + '/' + mois[infos.getMonth()] + '/' + infos.getFullYear()+'</p>';
 }
 
 window.onload = function() {
-setInterval("date_heure()", 1000); //Actualisation de l'heure
+	setInterval("date_heure()", 1000); //Actualisation de l'heure
 };

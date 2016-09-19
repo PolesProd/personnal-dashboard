@@ -129,7 +129,7 @@
          });
       </script>
       <div class="WidgetGrand">
-         <div  style='max-width:500px;margin:0 auto' class='swipe'>
+         <div id='mySwipe' style='max-width:500px;margin:0 auto' class='swipe'>
               <div class='swipe-wrap'>
                 <div><b>0</b></div>
                 <div><b>1</b></div>
@@ -154,6 +154,24 @@
                 <div><b>20</b></div>
               </div>
         </div>
+        <script>
+
+// pure JS
+var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+  // startSlide: 4,
+  //auto: 3000,
+  // continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+
+// with jQuery
+// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+
+</script>
       </div>
       
    </div>

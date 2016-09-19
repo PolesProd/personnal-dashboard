@@ -53,14 +53,6 @@ include('lib/rssclass.php');
                     ?>
                 </div>
 
-              
-
-                <div class="WidgetMoyen">
-                    <?php
-                    $feedlistInsta = new rss('https://queryfeed.net/instagram?q=%23lepolesidf');
-                    echo $feedlistInsta->display(5, "Insta LePoleS_IDF");
-                    ?>
-                </div> 
                 <div id="WidgetMeteo">
                     <div id="widget_2283b64454088d82e0ea206c70ca219e">
                         <span id="l_2283b64454088d82e0ea206c70ca219e"><a href="http://www.my-meteo.fr/previsions+meteo+france/paris.html">www.my-meteo.fr</a></span>
@@ -154,6 +146,25 @@ include('lib/rssclass.php');
                         });
     </script>
                
+            </div>
+            
+            <div class="WidgetGrand">
+                <script>
+                    $(function(){
+                      $("#slides").slidesjs({
+                        width: 940,
+                        height: 528
+                      });
+                    });
+                </script>
+  <div id="slides">
+    <img src="http://placehold.it/940x528">
+    <img src="http://placehold.it/940x528">
+    <img src="http://placehold.it/940x528">
+    <img src="http://placehold.it/940x528">
+    <img src="http://placehold.it/940x528">
+  </div>
+
             </div>
         <footer>
 

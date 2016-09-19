@@ -74,7 +74,7 @@ include('lib/rssclass.php');
                 
                <canvas id="line_example" width="400" height="400"></canvas>
                     <script type="text/javascript">
-                        $(function{
+                        $(function(){
                        var N = 10;
                         // Array filled with N values at '0'
                         var zero_array = [];

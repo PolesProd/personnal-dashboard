@@ -12,13 +12,6 @@
     overflow: hidden;
     background-color: rgba(0, 255, 0, 0.5);
 }
-.WidgetPetit{
-    width: 300px;
-    height: 250px;
-    border: solid 1px #ccc;
-    overflow: hidden;
-    background-color: rgba(0, 0, 255, 0.5);
-}
 .WidgetMoyen>#widget_2283b64454088d82e0ea206c70ca219e{
     height: 120px;
     width: 475px;

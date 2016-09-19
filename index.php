@@ -177,7 +177,7 @@ window.mySwipe = Swipe(elem, {
 </script>
       </div>
     <div class="WidgetGrand">
-        <iframe src="https://calendar.google.com/calendar/htmlembed?src=%23contacts%40group.v.calendar.google.com&ctz=Europe/Paris" style="border: 0" width="700px" height="250px"></iframe>
+        <script type="text/javascript" src="http://www.emploi-ess.fr/js/udesapi.js?12456"></script> <script type="text/javascript"> insertUdesWidget('http://www.emploi-ess.fr/moteur-alone','410','321','8'); </script>
     </div>
    </div>
    <footer>

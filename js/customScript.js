@@ -51,7 +51,6 @@ setInterval("date_heure()", 1000); //Actualisation de l'heure
 //AUTO-UPDATE CHART WITH HIGHCHART
 
 $(function ChartUpdate() 
-    $(document).ready(function() {
         Highcharts.setOptions({
             global: {
                 useUTC: false
@@ -124,5 +123,5 @@ $(function ChartUpdate()
                 }())
             }]
         });
-    });
+
 });

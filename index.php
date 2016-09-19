@@ -1,5 +1,6 @@
 <?php
-   include('lib/rssclass.php');
+    include('lib/rssclass.php');
+    include('includes/db.php');
    ?>
 <!DOCTYPE HTML>
 <html>
@@ -166,6 +167,10 @@ window.mySwipe = Swipe(elem, {
       </div>
     <div class="WidgetGrand">
         <script type="text/javascript" src="http://www.emploi-ess.fr/js/udesapi.js?12456"></script> <script type="text/javascript"> insertUdesWidget('http://www.emploi-ess.fr/moteur-complet','820','621','8'); </script>
+    </div>
+    
+    <div class="WidgetGrand">
+        
     </div>
    </div>
    <footer>

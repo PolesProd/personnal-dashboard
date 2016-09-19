@@ -72,61 +72,84 @@ include('lib/rssclass.php');
                     </div>
                 </div>
                 
-               <canvas id="line_example" width="400" height="400"></canvas>
+               <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
                     <script type="text/javascript">
-                        $(function(){
-                       var N = 10;
-                        // Array filled with N values at '0'
-                        var zero_array = [];
-
-                        for (i = 0; i < N; i++)
-                            zero_array.push(0);
-
-                        // The data of the chart, describe the differents sets of data you want with points, colors...
-                        var data = {
-                                labels: zero_array,
-                                datasets:  [
-                                    {
-                                        label: "DataSet #1", // Name of the line
-                                        data: zero_array, // data to represent
-                                        // The following makes the line way less ugly
-                                        fillColor: "rgba(151,187,205,0.2)",
-                                        strokeColor: "rgba(151,187,205,1)",
-                                        pointColor: "rgba(151,187,205,1)",
-                                        pointStrokeColor: "#fff",
-                                        pointHighlightFill: "#fff",
-                                        pointHighlightStroke: "rgba(151,187,205,1)"
+                       $(function () {
+                            $(document).ready(function () {
+                                Highcharts.setOptions({
+                                    global: {
+                                        useUTC: false
                                     }
-                                ]
-                        };
+                                });
 
-                        // We wait for everything to be loaded
-                        window.onload = function main() {
+                                $('#container').highcharts({
+                                    chart: {
+                                        type: 'spline',
+                                        animation: Highcharts.svg, // don't animate in old IE
+                                        marginRight: 10,
+                                        events: {
+                                            load: function () {
 
-                            // Get the context of the canvas
-                            var ctx = document.getElementById("line_example").getContext("2d");
+                                                // set up the updating of the chart each second
+                                                var series = this.series[0];
+                                                setInterval(function () {
+                                                    var x = (new Date()).getTime(), // current time
+                                                        y = Math.random();
+                                                    series.addPoint([x, y], true, true);
+                                                }, 1000);
+                                            }
+                                        }
+                                    },
+                                    title: {
+                                        text: 'Live random data'
+                                    },
+                                    xAxis: {
+                                        type: 'datetime',
+                                        tickPixelInterval: 150
+                                    },
+                                    yAxis: {
+                                        title: {
+                                            text: 'Value'
+                                        },
+                                        plotLines: [{
+                                            value: 0,
+                                            width: 1,
+                                            color: '#808080'
+                                        }]
+                                    },
+                                    tooltip: {
+                                        formatter: function () {
+                                            return '<b>' + this.series.name + '</b><br/>' +
+                                                Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
+                                                Highcharts.numberFormat(this.y, 2);
+                                        }
+                                    },
+                                    legend: {
+                                        enabled: false
+                                    },
+                                    exporting: {
+                                        enabled: false
+                                    },
+                                    series: [{
+                                        name: 'Random data',
+                                        data: (function () {
+                                            // generate an array of random data
+                                            var data = [],
+                                                time = (new Date()).getTime(),
+                                                i;
 
-                            // Create the Chart object
-                            var line_example_chart = new Chart.Line(ctx,data);
-
-                            // Used for the labels on the X axis
-                            var label_idx = 1;
-
-                            // Function to execute to remove then add a new random value to the chart
-                            function rand_value() {
-                                // Generate a random integer
-                                var rand_val = Math.floor(Math.random() * 100);
-
-                                // Remove the point at the far left of the chart
-                                line_example_chart.removeData();
-
-                                // Add the random value at the far right of the chart
-                                line_example_chart.addData([rand_val], label_idx++);
-                            }
-                            // Run rand_value() every 2 seconds
-                            window.setInterval(rand_value, 2000);
-                        }
-                    });
+                                            for (i = -19; i <= 0; i += 1) {
+                                                data.push({
+                                                    x: time + i * 1000,
+                                                    y: Math.random()
+                                                });
+                                            }
+                                            return data;
+                                        }())
+                                    }]
+                                });
+                            });
+                        });
     </script>
                
             </div>

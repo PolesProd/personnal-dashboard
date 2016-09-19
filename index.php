@@ -21,7 +21,9 @@ include('lib/rssclass.php');
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
         <script src="lib/slideShow/jquery.slides.js"></script>
         <script src="lib/slideShow/jquery.slides.min.js"></script>
-        <script src="lib/Chart.min.js"></script>
+<!--        <script src="lib/Chart.min.js"></script>-->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
         
 
 

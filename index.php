@@ -72,7 +72,7 @@
                          }
                      },
                      title: {
-                         text: 'Données inexistantes du PoleS'
+                         text: 'Données Random'
                      },
                      xAxis: {
                          type: 'datetime',

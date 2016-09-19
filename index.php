@@ -142,10 +142,10 @@
             });
          </script>
          <div id="slides">
-            <img src="http://placehold.it/940x528">
-            <img src="http://placehold.it/940x528">
-            <img src="http://placehold.it/940x528">
-            <img src="http://placehold.it/940x528">
+            <img src="http://placehold.it/940x428">
+            <img src="http://placehold.it/940x328">
+            <img src="http://placehold.it/940x228">
+            <img src="http://placehold.it/940x128">
             <img src="http://placehold.it/940x528">
          </div>
       </div>

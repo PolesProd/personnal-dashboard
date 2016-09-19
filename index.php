@@ -2,7 +2,7 @@
     include('lib/rssclass.php');
     include('includes/db.php');
 
-    $sqlSelect = 'SELECT * FROM users';
+    $sqlSelect = 'SELECT * FROM table 2';
     $querySelect = $db->query($sqlSelect);
     $resultSelect = $querySelect->fetchAll();
     $countResult = count($resultSelect);

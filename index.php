@@ -18,8 +18,11 @@
       <script src="lib/jquery-3.1.0.min.js"></script>
       <script src="js/customScript.js"></script>
       <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<!--
       <script src="lib/slideShow/jquery.slides.js"></script>
       <script src="lib/slideShow/jquery.slides.min.js"></script>
+-->
+      <script src="lib/swipe.js"></script>
       <!--        <script src="lib/Chart.min.js"></script>-->
       <script src="https://code.highcharts.com/highcharts.js"></script>
       <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -132,23 +135,35 @@
          });
          });
       </script>
-      <div class="WidgetGrand">
-         <script>
-            $(function(){
-              $("#slides").slidesjs({
-                width: 940,
-                height: 528
-              });
-            });
-         </script>
-         <div id="slides">
-            <img src="http://placehold.it/940x428">
-            <img src="http://placehold.it/940x328">
-            <img src="http://placehold.it/940x228">
-            <img src="http://placehold.it/940x128">
-            <img src="http://placehold.it/940x528">
-         </div>
-      </div>
+      <div class="WidgetGrand" id='mySwipe'>
+          <div class='swipe-wrap'>
+            <div><b>0</b></div>
+            <div><b>1</b></div>
+            <div><b>2</b></div>
+            <div><b>3</b></div>
+            <div><b>4</b></div>
+            <div><b>5</b></div>
+            <div><b>6</b></div>
+            <div><b>7</b></div>
+            <div><b>8</b></div>
+            <div><b>9</b></div>
+            <div><b>10</b></div>
+            <div><b>11</b></div>
+            <div><b>12</b></div>
+            <div><b>13</b></div>
+            <div><b>14</b></div>
+            <div><b>15</b></div>
+            <div><b>16</b></div>
+            <div><b>17</b></div>
+            <div><b>18</b></div>
+            <div><b>19</b></div>
+            <div><b>20</b></div>
+          </div>
+          <button onclick='mySwipe.prev()'>prev</button> 
+          <button onclick='mySwipe.next()'>next</button>
+    </div>
+</div>
+      
    </div>
    <footer>
    </footer>

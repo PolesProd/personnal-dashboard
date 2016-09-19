@@ -9,11 +9,20 @@ try {
 }
 
 
-// Create database
-$sql = "CREATE DATABASE myDB";
-if ($db->query($sql) === TRUE) {
-    echo "Database created successfully";
-} else {
-    echo "Error creating database: ";
+$sql = "CREATE TABLE users (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+nom VARCHAR(30) NOT NULL,
+prenom VARCHAR(30) NOT NULL,
+fonction VARCHAR(128) NOT NULL,
+structure VARCHAR(128) NOT NULL,
+code_postal INTEGER(30) NOT NULL,
+ville VARCHAR(128) NOT NULL,
+email VARCHAR(50),
+reg_date TIMESTAMP
+)";
+if($db->query($sql) === true){
+    echo 'Table créer';
 }
-?>
+else {
+    echo 'Fail !!!';
+}

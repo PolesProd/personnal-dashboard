@@ -25,6 +25,7 @@ include('lib/rssclass.php');
         
         <title>Dashboard Custom LePoleS</title>
     </head>
+
     	<!--    Début du Contenu-->
 	<body>
 
@@ -56,5 +57,6 @@ include('lib/rssclass.php');
 
 		</footer>
 	</body>
+
          <!--    Fin du Contenu-->
 </html>

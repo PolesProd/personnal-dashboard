@@ -133,7 +133,7 @@ include('lib/rssclass.php');
                                         enabled: false
                                     },
                                     series: [{
-                                        name: 'Random data',
+                                        name: 'Data',
                                         data: (function () {
                                             // generate an array of random data
                                             var data = [],

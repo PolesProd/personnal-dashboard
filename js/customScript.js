@@ -1,28 +1,28 @@
 // Drag And Drop Function
-$(function(){
-    $('.drop').droppable({
-        tolerance: 'fit',
-        drop: function(event,ui){
-            ui.draggable.offset(ui.position);
-        }
-    });
-
-    $('.drag').draggable({
-        revert: 'invalid',
-        helper: 'clone',
-        stop: function(){
-            $(this).draggable('option','revert','invalid');
-        }
-    });
-
-    $('.drag').droppable({
-        greedy: true,
-        tolerance: 'touch',
-        drop: function(event,ui){
-            ui.draggable.draggable('option','revert',true);
-        }
-    });
-});
+//$(function(){
+//    $('.drop').droppable({
+//        tolerance: 'fit',
+//        drop: function(event,ui){
+//            ui.draggable.offset(ui.position);
+//        }
+//    });
+//
+//    $('.drag').draggable({
+//        revert: 'invalid',
+//        helper: 'clone',
+//        stop: function(){
+//            $(this).draggable('option','revert','invalid');
+//        }
+//    });
+//
+//    $('.drag').droppable({
+//        greedy: true,
+//        tolerance: 'touch',
+//        drop: function(event,ui){
+//            ui.draggable.draggable('option','revert',true);
+//        }
+//    });
+//});
 
 
 //HORLOGE
@@ -45,3 +45,7 @@ document.getElementById('date_heure').innerHTML += '<br>' + jours[infos.getDay()
 window.onload = function() {
 setInterval("date_heure()", 1000); //Actualisation de l'heure
 };
+
+
+
+//AUTO-UPDATE CHART WITH HIGHCHART

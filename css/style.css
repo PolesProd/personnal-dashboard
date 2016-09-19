@@ -31,6 +31,26 @@
     width: 490px;
     border: solid 1px #ccc;
 }
+#myChart{
+    background-color: aqua;
+}
+/*
 .drag:hover{
     cursor: all-scroll;
+}*/
+
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
 }

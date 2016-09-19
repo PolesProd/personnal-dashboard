@@ -38,18 +38,6 @@
             echo $feedlistMonde->display(8, "<center>Le Monde</center>");
             ?>
       </div>
-      <div id="WidgetMeteo">
-         <div id="widget_2283b64454088d82e0ea206c70ca219e">
-            <span id="l_2283b64454088d82e0ea206c70ca219e"><a href="http://www.my-meteo.fr/previsions+meteo+france/paris.html">www.my-meteo.fr</a></span>
-            <script type="text/javascript">
-               (function() {
-               var my = document.createElement("script"); my.type = "text/javascript"; my.async = true;
-               my.src = "http://services.my-meteo.fr/widget/js-design.php?ville=251&format=petit-horizontal&nb_jours=3&ombre1=000000&c1=ffffff&c2=a9a9a9&c3=ffffff&c4=ffffff&c5=ffffff&police=0&t_icones=4&fond=6&masque=1&x=476&y=80&id=2283b64454088d82e0ea206c70ca219e";
-               var z = document.getElementsByTagName("script")[0]; z.parentNode.insertBefore(my, z);
-               })();
-            </script>
-         </div>
-      </div>
       <div class="WidgetGrand" id="container" onload="ChartUpdate()"></div>
       <script type="text/javascript">$(function () {
          $(document).ready(function () {

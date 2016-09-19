@@ -22,6 +22,8 @@ include('lib/rssclass.php');
         <script src="lib/slideShow/jquery.slides.js"></script>
         <script src="lib/slideShow/jquery.slides.min.js"></script>
         <script src="lib/Chart.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 
         <!--        Appel des Styles-->
@@ -71,46 +73,55 @@ include('lib/rssclass.php');
                     </div>
                 </div>
                 
-             
-                    <canvas id="myChart" width="50px" height="50px"></canvas>
-                    <script type="text/javascript">
-                        var dataCharts = [0]
-                        var ctx = document.getElementById("myChart");
-                        var startingData =  {
-                            type: 'line',
-                            data: {
-                                labels: [1, 2, 3, 4, 5, 6, 7],
-                                  datasets: [
-                                      {
-                                          fillColor: "rgba(220,220,220,0.2)",
-                                          strokeColor: "rgba(220,220,220,1)",
-                                          pointColor: "rgba(220,220,220,1)",
-                                          pointStrokeColor: "#fff",
-                                          data: [65, 59, 80, 81, 56, 55, 40]
-                                      }
-                                  ]
-                            },
-                           
-                        };
-                        var myChart = new Chart(ctx,startingData);
-
-                       
-                        
-                        
-
-//setInterval(function(){
-//  // Get a random index point
-//  var indexToUpdate = Math.round(Math.random() * startingData.data.labels[0]);
-//  
-//  // Update one of the points in the second dataset
-//  startingData.data.labels[0] = Math.round(Math.random(1,100) * 100);
-//    
-//     console.log(startingData.data.labels[0])
-//  
-//  myChart.update();
-//}, 1000);
-
-                </script>
+                <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    <script type="text/javascript">$(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'Monthly Average Temperature',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Source: WorldClimate.com',
+            x: -20
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        yAxis: {
+            title: {
+                text: 'Temperature (°C)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: '°C'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Tokyo',
+            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+        }, {
+            name: 'New York',
+            data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+        }, {
+            name: 'Berlin',
+            data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+        }, {
+            name: 'London',
+            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+        }]
+    });
+});</script>
                
             </div>
         <footer>

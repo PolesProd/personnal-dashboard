@@ -41,7 +41,7 @@
           <div class="WidgetMoyen">
              <?php
                 $feedlistMonde = new rss('http://www.zdnet.fr/feeds/rss/actualites/internet/');
-                echo $feedlistMonde->display(8, "<center>ZDNet</center>");
+                echo $feedlistMonde->display(10, "<center>ZDNet</center>");
                 ?>
           </div>
           <div class="WidgetGrand" id="container" onload="ChartUpdate()"></div>

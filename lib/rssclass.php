@@ -9,9 +9,11 @@ function parse() {
   $rss_split = array();
   foreach ($rss->channel->item as $item) {
    $title = (string) $item->title; // Title
-   $link = (string) $item->link; // Url Link
+   $link = (string) $item->link;
+   $thumb = (string) $item->url;// Url Link
    $description = (string) $item->description; //Description
    $rss_split[] = '<div class="post">
+        <img src="'.$thumb.'">
        <a href="' . $link . '" target="_blank" title="" >
         ' . $title . '
        </a>

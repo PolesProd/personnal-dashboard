@@ -116,7 +116,8 @@ include('lib/rssclass.php');
                         var count = data.series[0].data.length
                         for (i = 0; i < count; i++) { 
                             data.series[0].data[i]
-                            console.log(data.series[0].data[i])
+                            data.series[0].data[i] = Math.floor(Math.random() * 31)
+                             console.log(data.series[0].data[i])
                         }
                         
                     

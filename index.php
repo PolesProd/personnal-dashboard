@@ -176,7 +176,9 @@ window.mySwipe = Swipe(elem, {
 
 </script>
       </div>
-      
+    <div class="WidgetGrand">$
+        <iframe src="https://calendar.google.com/calendar/htmlembed?src=%23contacts%40group.v.calendar.google.com&ctz=Europe/Paris"></iframe>
+    </div>
    </div>
    <footer>
    </footer>

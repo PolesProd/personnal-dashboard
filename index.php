@@ -74,7 +74,7 @@ include('lib/rssclass.php');
                     </div>
                 </div>
                 
-               <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+               <div class="WidgetGrand" id="container"></div>
                     <script type="text/javascript">
                        $(function () {
                             $(document).ready(function () {

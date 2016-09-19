@@ -78,7 +78,7 @@
                      }
                  },
                  title: {
-                     text: 'Live random data'
+                     text: 'Données inexistantes du PoleS'
                  },
                  xAxis: {
                      type: 'datetime',

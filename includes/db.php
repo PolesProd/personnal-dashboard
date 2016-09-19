@@ -18,7 +18,6 @@ structure VARCHAR(128) NOT NULL,
 code_postal INTEGER(30) NOT NULL,
 ville VARCHAR(128) NOT NULL,
 email VARCHAR(50),
-reg_date TIMESTAMP
 )";
 if($db->query($sql) === true){
     echo 'Table créer';

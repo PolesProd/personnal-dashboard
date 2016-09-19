@@ -113,13 +113,15 @@ include('lib/rssclass.php');
                             }]
                         }
                         $('#container').highcharts(data);
-                        var count = data.series[0].data.length
-                        for (i = 0; i < count; i++) { 
-                            data.series[0].data[i]
-                            data.series[0].data[i] = Math.floor(Math.random() * 31)
-                             console.log(data.series[0].data[i])
-                        }
-                        
+                        setInterval(function(){ 
+                            var count = data.series[0].data.length
+                            for (i = 0; i < count; i++) { 
+                                data.series[0].data[i]
+                                data.series[0].data[i] = Math.floor(Math.random() * 31)
+                                 console.log(data.series[0].data[i])
+                            }
+                             $('#container').highcharts(data);
+                        }, 3000);
                     
     </script>
                

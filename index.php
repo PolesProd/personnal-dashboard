@@ -47,7 +47,6 @@ include('lib/rssclass.php');
 		</section><!--
 		--><section id="right" class="spaceGrid">
 			<div>
-
 			</div>
 			<div class="WidgetPetit drag">
 				<h2>heure et date</h2>

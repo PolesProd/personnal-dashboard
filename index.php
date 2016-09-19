@@ -175,7 +175,22 @@ window.mySwipe = Swipe(elem, {
     </div>
     
     <div class="WidgetGrand">
-        
+       <ul>
+        <?php
+            for($i = 0; $i< countResult;$i++){
+                ?>
+        <li>nom : <?=$resultSelect[$i]['nom'];?> &nbsp;&nbsp;
+        prénom : <?=$resultSelect[$i]['prenom'];?> &nbsp;&nbsp;
+        fonction : <?=$resultSelect[$i]['fonction'];?> &nbsp;&nbsp;
+        structure : <?=$resultSelect[$i]['structure'];?> &nbsp;&nbsp;
+        code postal : <?=$resultSelect[$i]['code_postal'];?> &nbsp;&nbsp;
+        ville : <?=$resultSelect[$i]['ville'];?> &nbsp;&nbsp;
+        email : <?=$resultSelect[$i]['email'];?> &nbsp;&nbsp;
+        </li>
+        <?php        
+            }
+        ?>
+        </ul>
     </div>
    </div>
    <footer>

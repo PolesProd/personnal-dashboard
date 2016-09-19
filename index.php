@@ -177,7 +177,7 @@ window.mySwipe = Swipe(elem, {
 </script>
       </div>
     <div class="WidgetGrand">
-        <script type="text/javascript" src="http://www.emploi-ess.fr/js/udesapi.js?12456"></script> <script type="text/javascript"> insertUdesWidget('http://www.emploi-ess.fr/moteur-alone','410','321','8'); </script>
+        <script type="text/javascript" src="http://www.emploi-ess.fr/js/udesapi.js?12456"></script> <script type="text/javascript"> insertUdesWidget('http://www.emploi-ess.fr/moteur-alone','700','250','8'); </script>
     </div>
    </div>
    <footer>

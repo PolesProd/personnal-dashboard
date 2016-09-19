@@ -75,54 +75,57 @@ include('lib/rssclass.php');
                 
                 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
                     <script type="text/javascript">
+                       var N = 10;
+                        // Array filled with N values at '0'
+                        var zero_array = [];
+
+                        for (i = 0; i < N; i++)
+                            zero_array.push(0);
+
+                        // The data of the chart, describe the differents sets of data you want with points, colors...
                         var data = {
-                            title: {
-                                text: 'Monthly Average Temperature',
-                                x: -20 //center
-                            },
-                            subtitle: {
-                                text: 'Source: WorldClimate.com',
-                                x: -20
-                            },
-                            xAxis: {
-                                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-                                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-                            },
-                            yAxis: {
-                                title: {
-                                    text: 'Temperature (°C)'
-                                },
-                                plotLines: [{
-                                    value: 0,
-                                    width: 1,
-                                    color: '#808080'
-                                }]
-                            },
-                            tooltip: {
-                                valueSuffix: '°C'
-                            },
-                            legend: {
-                                layout: 'vertical',
-                                align: 'right',
-                                verticalAlign: 'middle',
-                                borderWidth: 0
-                            },
-                            series: [{
-                                name: 'Tokyo',
-                                data: [15.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-                            }]
-                        }
-                        $('#container').highcharts(data);
-                        setInterval(function(){ 
-                            var count = data.series[0].data.length
-                            for (i = 0; i < count; i++) { 
-                                data.series[0].data[i]
-                                data.series[0].data[i] = Math.floor(Math.random() * 31)
-                                 console.log(data.series[0].data[i])
+                                labels: zero_array,
+                                datasets:  [
+                                    {
+                                        label: "DataSet #1", // Name of the line
+                                        data: zero_array, // data to represent
+                                        // The following makes the line way less ugly
+                                        fillColor: "rgba(151,187,205,0.2)",
+                                        strokeColor: "rgba(151,187,205,1)",
+                                        pointColor: "rgba(151,187,205,1)",
+                                        pointStrokeColor: "#fff",
+                                        pointHighlightFill: "#fff",
+                                        pointHighlightStroke: "rgba(151,187,205,1)"
+                                    }
+                                ]
+                        };
+
+                        // We wait for everything to be loaded
+                        window.onload = function main() {
+
+                            // Get the context of the canvas
+                            var ctx = document.getElementById("line_example").getContext("2d");
+
+                            // Create the Chart object
+                            var line_example_chart = new Chart.Line(ctx,data);
+
+                            // Used for the labels on the X axis
+                            var label_idx = 1;
+
+                            // Function to execute to remove then add a new random value to the chart
+                            function rand_value() {
+                                // Generate a random integer
+                                var rand_val = Math.floor(Math.random() * 100);
+
+                                // Remove the point at the far left of the chart
+                                line_example_chart.removeData();
+
+                                // Add the random value at the far right of the chart
+                                line_example_chart.addData([rand_val], label_idx++);
                             }
-                             $('#container').highcharts(data);
-                        }, 3000);
-                    
+                            // Run rand_value() every 2 seconds
+                            window.setInterval(rand_value, 2000);
+                        }
     </script>
                
             </div>

@@ -10,7 +10,7 @@ include('lib/rssclass.php');
         <meta name="keywords" content="dashboard, Custom">
         <meta name="author" content="LePoleS">
         <link rel="icon" type="image/png" href="http://lepoles.org/wp-content/themes/activism/favicon.ico" />
-
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         <!--        Appels des Librairies et Scripts-->
         <script src="lib/Chart.min.js"></script>
         <script src="lib/jquery-3.1.0.min.js"></script>
@@ -38,7 +38,7 @@ include('lib/rssclass.php');
 					
 				</div><!--
 				--><div>
-
+				
 				</div>
 			</section>
 		</section><!--
@@ -57,7 +57,7 @@ include('lib/rssclass.php');
 					//Widget feed RSS le monde
 					$feedlistJob = new rss('http://www.joobeo.com/feed?post_type=job_listing');
 					//print_r($feedlistZnet);
-					echo $feedlistJob->display(6, "<h2 class='titleWidget'>Emplois Web</h2>");
+					echo $feedlistJob->display(10, "<h2 class='titleWidget'>Emplois Web</h2>");
 				?>
 			</div>
 			<div>

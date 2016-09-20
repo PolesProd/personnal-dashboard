@@ -1,6 +1,13 @@
 <?php
-include('lib/rssclass.php');
+    include('lib/rssclass.php');
+    include('includes/db.php');
+
+    $sqlSelect = 'SELECT * FROM users';
+    $querySelect = $db->query($sqlSelect);
+    $resultSelect = $querySelect->fetchAll();
+    $countResult = count($resultSelect);
 ?>
+
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -15,6 +22,7 @@ include('lib/rssclass.php');
         <script src="lib/Chart.min.js"></script>
         <script src="lib/jquery-3.1.0.min.js"></script>
         <script src="js/customScript.js"></script>
+        <script src="js/configCharts.js"></script>
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
         <script src="lib/slideShow/jquery.slides.js"></script>
         <script src="lib/slideShow/jquery.slides.min.js"></script>
@@ -66,7 +74,8 @@ include('lib/rssclass.php');
 			</div>
 		</section>
 		<footer>
-
+			<script src="js/customScript.js"></script>
+			<script src="js/configCharts.js"></script>
 		</footer>
 	</body>
 

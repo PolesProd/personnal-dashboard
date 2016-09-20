@@ -43,9 +43,9 @@
 			</section>
 			<section>
 				<div>
-					
+				
 				</div><!--
-				--><div>
+				--><div id="container" onload="ChartUpdate()">
 				
 				</div>
 			</section>

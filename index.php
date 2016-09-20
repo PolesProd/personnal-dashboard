@@ -38,15 +38,27 @@ include('lib/rssclass.php');
 					
 				</div><!--
 				--><div>
-					
+
 				</div>
 			</section>
 		</section><!--
 		--><section id="center" class="spaceGrid">
-
+			<?php
+				//Widget feed RSS le monde
+				$feedlistZnet = new rss('http://www.zdnet.fr/feeds/rss/actualites/internet/');
+				//print_r($feedlistZnet);
+				echo $feedlistZnet->display(16, "<h2 class='titleWidget'>ZDNet - news</h2>");
+			?>
 		</section><!--
 		--><section id="right" class="spaceGrid">
 			<div>
+				<!--//emplois ESS-->
+				<?php
+					//Widget feed RSS le monde
+					$feedlistJob = new rss('http://www.joobeo.com/feed?post_type=job_listing');
+					//print_r($feedlistZnet);
+					echo $feedlistJob->display(6, "<h2 class='titleWidget'>Emplois Web</h2>");
+				?>
 			</div>
 			<div>
 				<h2>heure et date</h2>

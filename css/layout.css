@@ -37,9 +37,6 @@ body{
 #leftSide section div:nth-child(even){
 	background-color:indianred;
 }
-#center{
-	background-color:darkkhaki;
-}
 #right{
 	background-color:greenyellow;
 }
@@ -49,9 +46,12 @@ body{
 	background-color:yellow;
 }
 #right > div:nth-child(even){
-	background-color:white;
+	/*background-color:white;*/
 	height:30%;
 	padding:40px 0 15px 20%;
+}
+#right{
+	overflow: hidden;
 }
 /*------- Style des Widgets -------*/
 div#date_heure{
@@ -72,4 +72,39 @@ h2{
     position: relative;
     top: 32px;
 }
-
+.titleWidget{
+	text-align: center;
+    padding: 25px 0;
+}
+#center .post{
+	padding-top:15px;
+	width: 46%;
+	background-size:cover;
+	margin:5px 10px;
+	height: 150px;
+	display: inline-block;
+	vertical-align: top;
+	border-radius:5px;
+}
+#center{
+	overflow-y: hidden;
+}
+#center .post h5 a{
+	text-decoration: none;
+	color: white;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 11px;
+}
+#center .post h5 a:hover{
+	color:black;
+	text-decoration: underline;
+	background-color:rgba(255, 255, 255, 0.5); 
+}
+.post h5{
+	padding:0 10px;
+}
+#conteneur{
+	overflow-y:scroll; 
+	height:88vh;
+}

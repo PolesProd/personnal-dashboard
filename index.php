@@ -13,7 +13,7 @@
     <head>
         <!--      MetaData-->
         <meta charset="UTF-8">
-        <meta name="description" content="Dashboard">
+        <meta name="description" content="dashboard">
         <meta name="keywords" content="dashboard, Custom">
         <meta name="author" content="LePoleS">
         <link rel="icon" type="image/png" href="http://lepoles.org/wp-content/themes/activism/favicon.ico" />
@@ -42,9 +42,7 @@
 
 			</section>
 			<section>
-				<div>
-				
-				</div><!--
+				<div></div><!--
 				--><div id="container" onload="ChartUpdate()">
 				
 				</div>

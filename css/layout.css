@@ -160,30 +160,28 @@ h2{
 #leftSide section:first-child > div > ul{
 	width:auto;
 }
+
+/*AFFICHAGE PARTENAIRES*/
 .adherent {
     vertical-align: top;
     background-position: center;
     background-size: cover;
     background-repeat: none;
-    height: calc(11vh);
+    height: auto;/*calc(11vh);*/
     width: calc(14vw);
     display: inline-block;
     margin: 10px 7px;
 	padding: 10px 30px;
 }
 li ul {
-	background-color: red;
     margin: auto;
     width: 14vw;
 }
-div img{
-	width: calc(14vw);
-}
-/*AFFICHAGE PARTENAIRES*/
+
 .adherent ul li p{
 	display: inline-block;
-    background-color: rgba(0,0,0,0.65);
-    color: white; 
+    /*background-color: rgba(0,0,0,0.65);*/
+    color: black; 
     padding: 3px 5px;
 }
 #nom,#prenom{
@@ -197,6 +195,10 @@ div img{
 }
 #fonction{
 	font-size: 18px;
+}
+div img{
+	height:auto;
+	width: calc(14vw);
 }
 #structure{}
 #postal{}

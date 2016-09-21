@@ -7,7 +7,7 @@
 	function genRaw($l){
 		return "<li id='liste". $l ."' class='adherent'>
 					<ul>
-						<img src='" . $resultSelect[$l]['lienThumb'] . "' alt='" . $resultSelect[$l]['structure'] . "'>
+						<img src='" . $resultSelect[$l]["lienThumb"] . "' alt='" . $resultSelect[$l]['structure'] . "'>
 						<li id='nom'><p>" . $resultSelect[$l]['nom'] . " " . $resultSelect[$l]['prenom'] . "</p></li>
 						<li id='fonction'><p>" .$resultSelect[$l]['fonction'] . "</p></li>
 						<li id='structure'><p>" . $resultSelect[$l]['structure']."</p></li>

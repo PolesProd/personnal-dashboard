@@ -2,21 +2,21 @@
 	<ul>
 		<?php
 			for($i = 0; $i< $countResult;$i++){?>
-			<li id="liste<?= $i; ?>" class="adherent">
+			<li id="liste<?= $i; ?>" class="adherent" style="background-image:url('<?php echo $resultSelect[$i]['lienThumb']; ?>');">
 				<ul>
-					<li>nom : <?=$resultSelect[$i]['nom'];?></li>
-					<li>prénom : <?=$resultSelect[$i]['prenom'];?> &nbsp;&nbsp;</li>
-					<li>fonction : <?=$resultSelect[$i]['fonction'];?> &nbsp;&nbsp;</li>
-					<li>structure : <?=$resultSelect[$i]['structure'];?> &nbsp;&nbsp;</li>
-					<li>code postal : <?=$resultSelect[$i]['code_postal'];?> &nbsp;&nbsp;</li>
-					<li>ville : <?=$resultSelect[$i]['ville'];?> &nbsp;&nbsp;</li>
-					<li>email : <?=$resultSelect[$i]['email'];?> &nbsp;&nbsp;</li>
-					<!--thumb : <?php //echo $resultSelect[$i]['lienThumb'];?> &nbsp;&nbsp;-->
-					</li>
+					<li><p>nom : <?=$resultSelect[$i]['nom'];?></p></li>
+					<li><p>prénom : <?=$resultSelect[$i]['prenom'];?></p></li>
+					<li><p>fonction : <?=$resultSelect[$i]['fonction'];?></p></li>
+					<li><p>structure : <?=$resultSelect[$i]['structure'];?></p></li>
+					<li><p>code postal : <?=$resultSelect[$i]['code_postal'];?></p></li>
+					<li><p>ville : <?=$resultSelect[$i]['ville'];?></p></li>
+					<li><p>email : <?=$resultSelect[$i]['email'];?></p></li>
+					<li><p>thumb : <?php echo $resultSelect[$i]['lienThumb'];?></p></li>
 				</ul>
 			</li>
-				<?php        
+		<?php        
 			}
 		?>
 	</ul>
+	<img src="img/wf3.jpg" alt="logoWF3">
 </div>

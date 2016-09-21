@@ -5,10 +5,16 @@ $(function () {
 				useUTC: false
 		}
 	});
-		console.log('into the challenge')
+		
+	//Gestion de la position de la souris
+	var pageCoords = '';		
+	$("body").mousemove(function(e){
+		pageCoords = $('body').height() - e.pageY;
+	});
+		
 	$('#container').highcharts({
 		chart: {
-			type: 'spline',
+			type: 'line',
 			animation: Highcharts.svg, // don't animate in old IE
 			marginRight: 10,
 			events: {
@@ -17,14 +23,14 @@ $(function () {
 					var series = this.series[0];
 					setInterval(function () {
 						var x = (new Date()).getTime(), // current time
-							y = Math.random();
+							y = pageCoords; /*Math.random();*/
 						series.addPoint([x, y], true, true);
-					}, 1000);
+					}, 100);
 				}
 			}
 		},
 		title: {
-			text: 'Données Random'
+			text: ''
 		},
 		xAxis: {
 			type: 'datetime',

@@ -21,11 +21,13 @@
         <!--        Appels des Librairies et Scripts-->
         <script src="lib/Chart.min.js"></script>
         <script src="lib/jquery-3.1.0.min.js"></script>
-        <script src="js/customScript.js"></script>
-        <script src="js/configCharts.js"></script>
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
         <script src="lib/slideShow/jquery.slides.js"></script>
         <script src="lib/slideShow/jquery.slides.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+      	
         
         <!--        Appel des Styles-->
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -34,16 +36,20 @@
         <title>Dashboard Custom LePoleS</title>
     </head>
 
-    	<!--    Début du Contenu-->
+    	 <!--    	Début du Contenu-->
 	<body>
 
 		<section id="leftSide" class="spaceGrid">
 			<section>
-
+				<?php include('includes/partenaires.php'); ?>
 			</section>
 			<section>
-				<div></div><!--
-				--><div id="container" onload="ChartUpdate()">
+				<div>
+					<h2 class='titleWidget'>users data</h2>
+					<p>Rendus des données recoltés lors du l'utilisation de votre browser web mis à jour en temps réels.</p>
+					<div id="container" onload="ChartUpdate()"></div>
+				</div><!--
+				--><div>
 				
 				</div>
 			</section>

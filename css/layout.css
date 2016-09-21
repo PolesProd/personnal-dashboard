@@ -171,6 +171,12 @@ h2{
     margin: 10px 7px;
 	padding: 10px 30px;
 }
+.adherent:nth-child(even){
+	float:left;
+}
+.adherent:nth-child(odd){
+	float:right;
+}
 li ul {
     margin: auto;
     width: 14vw;
@@ -200,3 +206,10 @@ div img{
 #postal{}
 #ville{}
 #email{}
+/*** chartStuff ***/
+#chartStuff .titleWidget{
+	padding:0;
+}
+#chartStuff .Ascii_MouseLR{
+	margin-bottom: 7vh;
+}

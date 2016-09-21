@@ -45,9 +45,11 @@
 				<?php include('includes/partenaires.php'); ?>
 			</section>
 			<section>
-				<div>
-					<h2 class='titleWidget'>users data</h2>
-					<p>Rendus des données recoltés lors du l'utilisation de votre browser web mis à jour en temps réels.</p>
+				<div id="chartStuff">
+					<h2 class='titleWidget'>Votre parcour</h2>
+					<?php
+						include 'includes/Ascii_MouseLR.php';
+					?>
 					<div id="container" onload="ChartUpdate()"></div>
 				</div><!--
 				--><div>

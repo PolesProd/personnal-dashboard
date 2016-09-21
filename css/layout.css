@@ -165,14 +165,13 @@ h2{
     background-position: center;
     background-size: cover;
     background-repeat: none;
-    height: calc(11vh);
+    height:auto;
     width: calc(14vw);
     display: inline-block;
     margin: 10px 7px;
 	padding: 10px 30px;
 }
 li ul {
-	background-color: red;
     margin: auto;
     width: 14vw;
 }
@@ -182,9 +181,8 @@ div img{
 /*AFFICHAGE PARTENAIRES*/
 .adherent ul li p{
 	display: inline-block;
-    background-color: rgba(0,0,0,0.65);
-    color: white; 
-    padding: 3px 5px;
+    color: black; 
+    /*padding: 3px 5px;*/
 }
 #nom,#prenom{
 	font-size: 25px;

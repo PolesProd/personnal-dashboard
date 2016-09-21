@@ -146,3 +146,10 @@ h2{
 	text-decoration: underline;
 	background-color:rgba(0, 0, 0, 0.5); 
 }
+
+/*Panel Partenaire*/
+#leftSide section:first-child>div{
+	overflow: scroll;
+	width:calc(10vw);
+	height:calc(10vh);
+}

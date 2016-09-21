@@ -41,6 +41,7 @@
 
 		<section id="leftSide" class="spaceGrid">
 			<section>
+				<h2 class='titleWidget'>les partenaires</h2>
 				<?php include('includes/partenaires.php'); ?>
 			</section>
 			<section>

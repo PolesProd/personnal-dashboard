@@ -13,6 +13,9 @@ body{
 	width:100%;
 	background-color:antiquewhite;
 }
+ul{
+	list-style:none;
+}
 .spaceGrid{
 	display:inline-block;
 	height: 100%;
@@ -159,14 +162,33 @@ h2{
 	width:auto;
 }
 .adherent {
-	background-position: center;
-	background-size: cover;
-	background-repeat: none;
-    height: auto;
-    width: calc(17vw);
+    vertical-align: top;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    height: calc(11vh);
+    width: calc(14vw);
     display: inline-block;
+    margin: 10px 7px;
+	padding: 10px 30px;
 }
 li ul {
     margin: auto;
     width: 12vw;
 }
+
+/*AFFICHAGE PARTENAIRES*/
+.adherent ul li p{
+	background-color:rgba(0,0,0,0.8);
+	color:white;
+	padding:3px 5px;
+}
+#nom,#prenom{
+	display: inline-block;
+}
+
+#fonction{}
+#structure{}
+#postal{}
+#ville{}
+#email{}

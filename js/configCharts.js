@@ -17,6 +17,7 @@ $(function () {
 			type: 'line',
 			animation: Highcharts.svg, // don't animate in old IE
 			marginRight: 10,
+			backgroundColor: 'antiquewhite',
 			events: {
 				load: function () {
 					// set up the updating of the chart each second

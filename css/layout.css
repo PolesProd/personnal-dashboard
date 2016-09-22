@@ -53,7 +53,7 @@ ul{
 }
 #leftSide section>div>p{
 	font-size: 19px;
-    padding: 54px 54px 0;
+    padding: 0 54px 0;
     text-transform: capitalize;
 }
 #rightSide section:nth-child(even) div:nth-child(even){
@@ -77,7 +77,7 @@ ul{
 #right > div:nth-child(even){
 	/*background-color:white;*/
 	height:30%;
-	padding:40px 0 15px 20%;
+	padding:0 0 15px 20%;
 }
 #right{
 	overflow: hidden;
@@ -148,7 +148,7 @@ h2{
 	padding-top:12px;
 	padding-left:43px;
 	background-size:cover;
-	margin:5px 10px;
+	margin:0 10px;
 	vertical-align: top;
 	border-radius:5px;
 }

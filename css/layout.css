@@ -1,0 +1,227 @@
+/*------- FONTS -------*/
+@import 'https://fonts.googleapis.com/css?family=Ropa+Sans';
+
+/*------- LAYOUT -------*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ropa Sans', sans-serif;
+}
+body{
+	position: fixed;
+	height: 100%;
+	width:100%;
+	background-color:antiquewhite;
+}
+ul{
+	list-style:none;
+}
+.spaceGrid{
+	display:inline-block;
+	height: 100%;
+	width:calc(100%/3*0.85);
+	margin:none;
+}
+#leftSide{
+	width:calc(100%/3*1.30);
+/*	background-color:chocolate;*/
+}
+#leftSide section:first-child h2:before{
+    font-size: 40px;
+    font-family: 'FontAwesome';
+    content: "\f299";
+    margin-right: 15px;
+}
+#leftSide section:first-child{
+	width:100%;
+	height: calc((100% * (2/3))*0.9);
+}
+#leftSide section>div{
+	color:antiquewhite;
+	display: inline-block;
+	width:calc(100%/2);
+	height:calc(40vh);
+	color:black;
+	overflow: hidden;
+}
+#container{
+	width: 390px;
+	height:250px;
+}
+#leftSide section>div>p{
+	padding:20px;
+	margin-bottom: 30px;
+}
+#leftSide section:nth-child(even) div:nth-child(even){
+
+}
+#right{
+/*	background-color:greenyellow;*/
+	
+}
+#right> div{
+	width:100%;
+	height:70%;
+/*	background-color:yellow;*/
+}
+#right > div:nth-child(even){
+	/*background-color:white;*/
+	height:30%;
+	padding:40px 0 15px 20%;
+}
+#right{
+	overflow: hidden;
+}
+/*------- Style des Widgets -------*/
+div#date_heure{
+	font-size: 60px;
+}
+div#date_heure span{
+	font-size: 120px;
+}
+#date_heure p:nth-child(even) {
+    line-height: 10px;
+    font-size: 65px;
+}
+h2{
+	font-size: 53px;
+    text-transform: uppercase;
+}
+#right div:nth-child(even) h2{
+    position: relative;
+    top: 32px;
+}
+.titleWidget{
+	text-align: center;
+    padding: 25px 0;
+}
+#center .post{
+	padding-top:15px;
+	width: 46%;
+	background-size:cover;
+	margin:10px 10px;
+	height: 150px;
+	display: inline-block;
+	vertical-align: top;
+	border-radius:5px;
+}
+#center{
+	overflow-y: hidden;
+}
+#center h2:before{
+	font-size: 22px;
+	font-family:'FontAwesome';
+	content:"\f1fe";
+	margin-right:10px;
+}
+#center .post h5 a{
+	text-decoration: none;
+	color: white;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 11px;
+}
+#center .post h5 a:hover{
+	color:black;
+	text-decoration: underline;
+	background-color:rgba(255, 255, 255, 0.5); 
+}
+.post h5{
+	padding:0 10px;
+}
+#conteneur{
+	overflow-y:scroll; 
+	height:88vh;
+}
+#right .post{
+	padding-top:15px;
+	padding-left:43px;
+	background-size:cover;
+	margin:5px 10px;
+	vertical-align: top;
+	border-radius:5px;
+}
+/*Panel emplois*/
+#right a{
+	padding:0 5px;
+	color: black;
+	text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+#right a:before{
+	font-size: 22px;
+	font-family:'FontAwesome';
+	content:"\f141";
+}
+#right a:hover:before{
+	content:"\f0a4";
+}
+#right a:hover{
+	color:white;
+	text-decoration: underline;
+	background-color:rgba(0, 0, 0, 0.5); 
+}
+
+/*Panel Partenaire*/
+#leftSide section:first-child > div{
+    width: calc(40vw);
+    height: calc(45vh);
+    display: block;
+    margin: auto;
+    overflow-y: scroll;
+}
+#leftSide section:first-child > div > ul{
+	width:auto;
+}
+.adherent {
+    vertical-align: top;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    height: auto;
+    width: 45%;
+    display: inline-block;
+    margin: 15px 7px;
+    padding: 10px 0px;
+}
+.adherent:nth-child(even){
+	float:left;
+}
+.adherent:nth-child(odd){
+	float:right;
+}
+li ul {
+    margin: auto;
+}
+div img{
+	width: 100%;
+}
+/*AFFICHAGE PARTENAIRES*/
+.adherent ul li p{
+	display: inline-block;
+    /*padding: 3px 5px;*/
+}
+#nom,#prenom{
+	font-size: 25px;
+	display: inline-block;
+}
+#structure{
+	font-size: 18px;
+    text-transform: uppercase;
+	font-weight: bold;
+}
+#fonction{
+	font-size: 18px;
+}
+#structure{}
+#postal{}
+#ville{}
+#email{}
+/*** chartStuff ***/
+#chartStuff .titleWidget{
+	padding:0;
+}
+#chartStuff .Ascii_MouseLR{
+	margin-bottom: 2vh;
+}

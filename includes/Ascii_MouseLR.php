@@ -1,5 +1,5 @@
 <style>
-	.Ascii{
+	.Ascii_MouseLR{
 		text-align: center;
 		font-size: 0.8vw !important;
 	}

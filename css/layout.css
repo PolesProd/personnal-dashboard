@@ -26,15 +26,22 @@ ul{
 	width:calc(100%/3*1.30);
 /*	background-color:chocolate;*/
 }
+#leftSide section:first-child h2:before{
+    font-size: 40px;
+    font-family: 'FontAwesome';
+    content: "\f299";
+    margin-right: 15px;
+}
 #leftSide section:first-child{
 	width:100%;
-	height:50%;
+	height: calc((100% * (2/3))*0.9);
 }
 #leftSide section>div{
+	color:antiquewhite;
 	display: inline-block;
 	width:calc(100%/2);
-	height:50vh;
-/*	background-color:darkseagreen;*/
+	height:calc(40vh);
+	color:black;
 	overflow: hidden;
 }
 #container{
@@ -46,10 +53,11 @@ ul{
 	margin-bottom: 30px;
 }
 #leftSide section:nth-child(even) div:nth-child(even){
-	background-color:indianred;
+
 }
 #right{
 /*	background-color:greenyellow;*/
+	
 }
 #right> div{
 	width:100%;
@@ -91,7 +99,7 @@ h2{
 	padding-top:15px;
 	width: 46%;
 	background-size:cover;
-	margin:5px 10px;
+	margin:10px 10px;
 	height: 150px;
 	display: inline-block;
 	vertical-align: top;
@@ -99,6 +107,12 @@ h2{
 }
 #center{
 	overflow-y: hidden;
+}
+#center h2:before{
+	font-size: 22px;
+	font-family:'FontAwesome';
+	content:"\f1fe";
+	margin-right:10px;
 }
 #center .post h5 a{
 	text-decoration: none;
@@ -130,7 +144,7 @@ h2{
 /*Panel emplois*/
 #right a{
 	padding:0 5px;
-	color:black; 
+	color: black;
 	text-decoration: none;
     text-transform: uppercase;
     font-size: 25px;
@@ -151,8 +165,8 @@ h2{
 
 /*Panel Partenaire*/
 #leftSide section:first-child > div{
-    width:calc(37vw);
-    height: calc(33vh);
+    width: calc(40vw);
+    height: calc(45vh);
     display: block;
     margin: auto;
     overflow-y: scroll;
@@ -165,11 +179,11 @@ h2{
     background-position: center;
     background-size: cover;
     background-repeat: none;
-    height:auto;
-    width: calc(14vw);
+    height: auto;
+    width: 45%;
     display: inline-block;
-    margin: 10px 7px;
-	padding: 10px 30px;
+    margin: 15px 7px;
+    padding: 10px 0px;
 }
 .adherent:nth-child(even){
 	float:left;
@@ -179,15 +193,13 @@ h2{
 }
 li ul {
     margin: auto;
-    width: 14vw;
 }
 div img{
-	width: calc(14vw);
+	width: 100%;
 }
 /*AFFICHAGE PARTENAIRES*/
 .adherent ul li p{
 	display: inline-block;
-    color: black; 
     /*padding: 3px 5px;*/
 }
 #nom,#prenom{
@@ -211,5 +223,5 @@ div img{
 	padding:0;
 }
 #chartStuff .Ascii_MouseLR{
-	margin-bottom: 7vh;
+	margin-bottom: 2vh;
 }

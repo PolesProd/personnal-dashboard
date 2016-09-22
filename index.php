@@ -41,12 +41,15 @@
 
 		<section id="leftSide" class="spaceGrid">
 			<section>
-				<h2 class='titleWidget'>les partenaires</h2>
+				<h2 class='titleWidget'>Avec nous</h2>
+				
+				<?php //include 'includes/Ascii_HandShake.html'; ?>
 				<?php include('includes/partenaires.php'); ?>
+				
 			</section>
 			<section>
 				<div id="chartStuff">
-					<h2 class='titleWidget'>Votre parcour</h2>
+					<h2 class='titleWidget'>Votre parcours</h2>
 					<?php
 						include 'includes/Ascii_MouseLR.php';
 					?>
@@ -62,7 +65,7 @@
 				//Widget feed RSS le monde
 				$feedlistZnet = new rss('http://www.zdnet.fr/feeds/rss/actualites/internet/');
 				//print_r($feedlistZnet);
-				echo $feedlistZnet->display(16, "<h2 class='titleWidget'>ZDNet - news</h2>");
+				echo $feedlistZnet->display(16, "<h2 class='titleWidget'>news</h2>");
 			?>
 		</section><!--
 		--><section id="right" class="spaceGrid">

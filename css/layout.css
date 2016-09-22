@@ -26,7 +26,12 @@ ul{
 	width:calc(100%/3*1.30);
 /*	background-color:chocolate;*/
 }
-#leftSide section:first-child h2:before{
+#right div:first-child h2:before{
+    font-size: 40px;
+    font-family: 'FontAwesome';
+    content: "\f298";
+    margin-right: 15px;
+}#leftSide section:first-child h2:before{
     font-size: 40px;
     font-family: 'FontAwesome';
     content: "\f299";
@@ -52,8 +57,11 @@ ul{
 	padding:20px;
 	margin-bottom: 30px;
 }
-#leftSide section:nth-child(even) div:nth-child(even){
-
+#rightSide section:nth-child(even) div:nth-child(even){
+	font-size: 36px;
+	font-family:'FontAwesome';
+	content:"\f298";
+	margin-right:10px;
 }
 #right{
 /*	background-color:greenyellow;*/
@@ -63,6 +71,9 @@ ul{
 	width:100%;
 	height:70%;
 /*	background-color:yellow;*/
+}
+#right> div:nth-child(odd) h2:before{
+	
 }
 #right > div:nth-child(even){
 	/*background-color:white;*/
@@ -109,7 +120,7 @@ h2{
 	overflow-y: hidden;
 }
 #center h2:before{
-	font-size: 22px;
+	font-size: 36px;
 	font-family:'FontAwesome';
 	content:"\f1fe";
 	margin-right:10px;
@@ -182,7 +193,7 @@ h2{
     height: auto;
     width: 45%;
     display: inline-block;
-    margin: 15px 7px;
+    margin: 15px 18px;
     padding: 10px 0px;
 }
 .adherent:nth-child(even){

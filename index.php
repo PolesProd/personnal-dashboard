@@ -55,8 +55,8 @@
 					?>
 					<div id="container" onload="ChartUpdate()"></div>
 				</div><!--
-				--><div>
-				
+				--><div id="presentoir">
+						<?php include('includes/exercice.php'); ?>
 				</div>
 			</section>
 		</section><!--
@@ -75,7 +75,7 @@
 					//Widget feed RSS le monde
 					$feedlistJob = new rss('http://www.joobeo.com/feed?post_type=job_listing');
 					//print_r($feedlistZnet);
-					echo $feedlistJob->display(10, "<h2 class='titleWidget'>Emplois Web</h2>");
+					echo $feedlistJob->display(10, "<h2 class='titleWidget'>Emplois</h2>");
 				?>
 			</div>
 			<div>

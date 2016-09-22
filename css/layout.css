@@ -54,8 +54,9 @@ ul{
 	height:250px;
 }
 #leftSide section>div>p{
-	padding:20px;
-	margin-bottom: 30px;
+	font-size: 19px;
+    padding: 26px 54px 0;
+    text-transform: capitalize;
 }
 #rightSide section:nth-child(even) div:nth-child(even){
 	font-size: 36px;

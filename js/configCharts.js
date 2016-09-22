@@ -26,7 +26,7 @@ $(function () {
 						var x = (new Date()).getTime(), // current time
 							y = pageCoords; /*Math.random();*/
 						series.addPoint([x, y], true, true);
-					}, 100);
+					}, 700);
 				}
 			}
 		},

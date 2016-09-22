@@ -193,7 +193,7 @@ h2{
     height: auto;
     width: 45%;
     display: inline-block;
-    margin: 15px 18px;
+    margin: 15px 17px;
     padding: 10px 0px;
 }
 .adherent:nth-child(even){
@@ -235,7 +235,7 @@ div img{
 }
 #chartStuff .Ascii_MouseLR{
 	font-weight: bold;
-	margin-bottom: 2vh;
+	margin-bottom: 1vh;
 }
 #center .post h5 {
     height: 128px;

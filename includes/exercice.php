@@ -8,7 +8,7 @@
 			width: 80%;
 			font-size: 1.4rem;
 			text-align: right;
-			margin-bottom: 60px;
+			margin-bottom: 25px;
 		}
 		#presentoir p{
 			font-size:25px;
@@ -25,7 +25,7 @@
 		}
 			/*---logo---*/
 		#logo {
-			margin-right: 52px;
+			margin-right: 50px;
 			float: right;
 			width: 46%;
 		}

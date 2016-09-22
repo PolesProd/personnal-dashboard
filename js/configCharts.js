@@ -17,7 +17,7 @@ $(function () {
 			type: 'line',
 			animation: Highcharts.svg, // don't animate in old IE
 			marginRight: 10,
-			backgroundColor: 'antiquewhite',
+			backgroundColor: '#A1978A',
 			events: {
 				load: function () {
 					// set up the updating of the chart each second
@@ -38,13 +38,14 @@ $(function () {
 			tickPixelInterval: 150
 		},
 		yAxis: {
+			color: '#faebd7',
 			title: {
 				text: 'Value'
 			},
 			plotLines: [{
 				value: 0,
 				width: 1,
-				color: '#808080'
+				color: '#faebd7'
 			}]
 		},
 		tooltip: {
@@ -60,6 +61,7 @@ $(function () {
 		},
 		series: [{
 			name: 'Random data',
+			color: '#faebd7' ,
 			data: (function () {
 				// generate an array of random data
 					var data = [],

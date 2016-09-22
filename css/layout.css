@@ -42,11 +42,9 @@ ul{
 	height: calc((100% * (2/3))*0.9);
 }
 #leftSide section>div{
-	color:antiquewhite;
 	display: inline-block;
 	width:calc(100%/2);
 	height:calc(40vh);
-	color:black;
 	overflow: hidden;
 }
 #container{
@@ -55,7 +53,7 @@ ul{
 }
 #leftSide section>div>p{
 	font-size: 19px;
-    padding: 26px 54px 0;
+    padding: 54px 54px 0;
     text-transform: capitalize;
 }
 #rightSide section:nth-child(even) div:nth-child(even){
@@ -127,26 +125,27 @@ h2{
 	margin-right:10px;
 }
 #center .post h5 a{
-	text-decoration: none;
-	color: white;
-    font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0 11px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.4rem;
+    padding: 2px 0;
+    background-color: #615B53;
 }
 #center .post h5 a:hover{
 	color:black;
-	text-decoration: underline;
 	background-color:rgba(255, 255, 255, 0.5); 
 }
 .post h5{
 	padding:0 10px;
 }
 #conteneur{
-	overflow-y:scroll; 
 	height:88vh;
 }
+#center #conteneur{
+	overflow-y: scroll;
+}
 #right .post{
-	padding-top:15px;
+	padding-top:12px;
 	padding-left:43px;
 	background-size:cover;
 	margin:5px 10px;
@@ -155,7 +154,7 @@ h2{
 }
 /*Panel emplois*/
 #right a{
-	padding:0 5px;
+	padding:0 2px;
 	color: black;
 	text-decoration: none;
     text-transform: uppercase;
@@ -232,8 +231,29 @@ div img{
 #email{}
 /*** chartStuff ***/
 #chartStuff .titleWidget{
-	padding:0;
+	padding:10px 0 0;
 }
 #chartStuff .Ascii_MouseLR{
+	font-weight: bold;
 	margin-bottom: 2vh;
 }
+#center .post h5 {
+    height: 128px;
+    border-radius: 5px;
+    top: -16px;
+    /* padding: 0 11px; */
+    padding: 19px 10px;
+    position: relative;
+    background-color: rgba(199, 187, 171, 0.65);
+}
+#center a{
+	color:#615B53;
+}
+/*--------------- COULEUR GLOBAL ----------------*/
+#leftSide section:first-child{ background-color: #C7BBAB; color:#615B53; }
+div img{ opacity:0.85; }
+#chartStuff{ background-color:#A1978A; color:antiquewhite; }
+#presentoir{}
+#center { background-color:#A1978A;color:antiquewhite;}
+#right> div:first-child,#right a{ background-color: #C7BBAB; color:#615B53; }
+#right> div:last-child{ background-color:#A1978A; color:antiquewhite; }

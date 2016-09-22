@@ -1,55 +1,38 @@
-<!--Sur cette page nous allons produire notre module à intégrer-->
-
-	<style>
-		/*GESTION DU TEXTE*/
-		#presentoir h1{
-			text-transform: uppercase;
-			margin-left: 30px;
-			width: 80%;
-			font-size: 1.4rem;
-			text-align: right;
-			margin-bottom: 25px;
-		}
-		#presentoir p{
-			font-size:25px;
-			text-align: right;
-		}
-		#presentoir p span{
-			font-weight: bold;
-		}
-		#presentoir>p{
-			margin-top: 40px;
-		}
-		#logo p, #logo img{
-			display: inline-block;
-		}
-			/*---logo---*/
-		#logo {
-			margin-right: 50px;
-			float: right;
-			width: 46%;
-		}
-		#logo p{
-			float: left;
-		}
-		#logo img{
-			width: 87%;
-		}
-	</style>
-
+<!--Resultat
+	Sur cette page nous allons produire notre module à intégrer
 	<!--a. Mot de presentation-->
-	<p>les structures de l'<span>ess</span> présentent :</p>
-	
+	<!--<p>les structures de l'<span>ess</span> présentent :</p>
+
 	<!--b. Le titre de l'evenement-->
-	<h1>Le numérique comme levier d'insertion : <span>quelle perspective sur Nos territoires ?</span></h1>
-	
+	<!--<h1>Le numérique comme levier d'insertion : <span>quelle perspective sur Nos territoires ?</span></h1>
+
 	<!--c. La presentation de la structure partenaire-->
-	<div id="logo">
+	<!--<div id="logo">
 		<p>By </p>
 		<img src="img/lepoles.png" alt="logo lepoles">
-	</div>
-<!--Intitulé
-	Dans cet exercice nous allons apprendre à intégrer un module en utilisant les languages courants HTML 5 et CSS3.
-	Le style CSS est déjà en place il ne reste plus q'à initialiser les formes tel qu'elles.
+		</div>
+	-->
+
+<!--Intituléde l'exercice
+Dans cet exercice nous allons apprendre à intégrer un module en utilisant les languages courants HTML 5 et CSS3.
+On va commencer par mettre en place les elements. 
+On à besoin :
+	>>>1. un mot d'introduction
+	>>>2. un titre
+	>>>3. une image
+
+	1. Nous allons introduire les structure de l'ESS.
+	Pour ce faire nous allons creer une balise "paragraphe"<p></p> et a l'interieur, ecrire le texte : 
+		-- les structures de l'ess présentent : --
 	
+	2. Un titre serait bienvenus.
+	creer une balise titre <h1></h1> et introduire a l'interieur le titre de l'evenement
+		-- Le numérique comme levier d'insertion : quelle perspective sur Nos territoires ? --
+	
+	3. Nous allons maintenant creer un logo de presentation. Pour cela nous allons d'abord creer une <div id="logo"></div>. Notez bien la presence de l'ID qui va determiner l'id de l'element.
+	
+		A l'interieur nous allons creer deux balises : 
+			>>> <p></p> avec a l'interieur le mot -- by --
+			>>> <img src="img/lepoles.png" alt="logo lepoles">
+
 -->

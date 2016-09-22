@@ -56,7 +56,43 @@
 					<div id="container" onload="ChartUpdate()"></div>
 				</div><!--
 				--><div id="presentoir">
-						<?php include('includes/exercice.php'); ?>
+					<style>
+						#presentoir h1{
+						text-transform: uppercase;
+						margin-left: 30px;
+						width: 80%;
+						font-size: 1.4rem;
+						text-align: right;
+						margin-bottom: 25px;
+					}
+						#presentoir p{
+							font-size:25px;
+							text-align: right;
+						}
+						#presentoir p span{
+							font-weight: bold;
+						}
+						#presentoir>p{
+							margin-top: 40px;
+						}
+						#logo p, #logo img{
+							display: inline-block;
+						}
+						/*---logo---*/
+						#logo {
+							margin-right: 50px;
+							float: right;
+							width: 46%;
+						}
+						#logo p{
+							float: left;
+						}
+						#logo img{
+							width: 87%;
+						}
+					</style>
+
+						<?php include('includes/exerciceCorrection.php'); ?>
 				</div>
 			</section>
 		</section><!--

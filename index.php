@@ -58,13 +58,13 @@
 				--><div id="presentoir">
 					<style>
 						#presentoir h1{
-						text-transform: uppercase;
-						margin-left: 30px;
-						width: 80%;
-						font-size: 1.4rem;
-						text-align: right;
-						margin-bottom: 25px;
-					}
+							text-transform: uppercase;
+							margin-left: 30px;
+							width: 80%;
+							font-size: 1.4rem;
+							text-align: right;
+							margin-bottom: 25px;
+						}
 						#presentoir p{
 							font-size:25px;
 							text-align: right;

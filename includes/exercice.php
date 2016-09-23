@@ -27,13 +27,13 @@ On à besoin :
 	Pour ce faire nous allons creer une balise "paragraphe"<p></p> et a l'interieur, ecrire le texte : 
 		-- les structures de l'ess présentent : -->
 	
-	
+	<p>les structures de l'<span>ess</span> présentent</p>
 	
 	<!-- 2. Un titre serait bienvenus.
 	creer une balise titre <h1></h1> et introduire a l'interieur le titre de l'evenement
 		-- Le numérique comme levier d'insertion : quelle perspective sur Nos territoires ? -->
 		
-		
+		<h1>Le numerique comme levier d'insertion : quelle perspective sur nos territoires</h1>
 		
 	<!-- 3. Nous allons maintenant creer un logo de presentation. Pour cela nous allons d'abord creer une <div id="logo"></div>. Notez bien la presence de l'ID qui va determiner l'id de l'element. -->
 	
@@ -41,7 +41,8 @@ On à besoin :
 			>>> <p></p> avec a l'interieur le mot -- by --
 			>>> <img src="img/lepoles.png" alt="logo lepoles"> -->
 		<div id="logo">
-
+			<p>by</p>
+			<img src="img/lepoles.png" alt="logo le poles">
 		</div>
 	
 	
